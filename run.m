@@ -16,16 +16,16 @@ for i=1:nv
     X{i} = mapstd(X{i}',0,1);
 end
 
-% Parameter 1: number of anchors (tunable)
+% Parameter 1: number of anchors (tunable:[k,2*k,5*k])
 m=2*k;
 
-% Parameter 2: alignPara (tunable)
+% Parameter 2: alignPara (tunable:[0.0001,1,10000])
 alignPara=10000;
 
-% Parameter 3: theta (tunable)
+% Parameter 3: gamma (tunable:[0.1 1 10 100])
 gamma=100;
 
-% Parameter 4: alpha (tunable)
+% Parameter 4: lambda (tunable:[0.0001 0.01 10 100])
 lambda=100;
 
 %%%Anchor augmention.
